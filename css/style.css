@@ -5,6 +5,7 @@
 }
 body {
     padding: 50px 0;
+    background: url("../images/bg.png") #eee repeat;
 }
 div {
     display: block;
@@ -25,7 +26,6 @@ a {
 /* index -- MAIN-CONTENT -- start */
 .main-content {
     height: 1000px;
-    background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
