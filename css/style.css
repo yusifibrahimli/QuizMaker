@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 50px 0;
+}
+div {
+    display: block;
+}
+a {
+    color: #31c5c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+    a:hover,
+	a:active {
+		color: #444;
+		}
+::selection {
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	}
+/* index -- MAIN-CONTENT -- start */
+.main-content {
+    height: 1000px;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* index -- MAIN-CONTENT -- end*/
+/* index -- FOOTER -- start */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    min-height: 40px;
+    width: 100%;
+    overflow-y: auto;
+    z-index: 0;
+    background-image: linear-gradient(to top,#3c3c3c 0,#222 100%);
+    background-repeat: repeat-x;
+    border-top: 1px solid #080808;
+    border-width: 1px 0 0;
+    color: #999;
+}
+.subfooter {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.copyright {
+    float: left;
+    font-size: 13px;
+    line-height: 50px;
+}
+.socials {
+    padding: 5px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+.socials-list {
+    font-size: 0;
+}
+.socials-item {
+    height: 40px;
+    width: 40px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2px;
+    background: none !important;
+}
+.footer .socials-item {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.socials-item-link {
+    height: 40px;
+    width: 40px;
+    display: block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    overflow: hidden;
+    color: #999;
+}
+.socials-item-link:hover {
+	border: none !important;
+	color: #fff !important;
+}
+.socials-item-link i {
+    font-size: 18px;
+    line-height: 40px;
+    position: relative;
+}
+.socials-item .socials-item-link:before {
+    display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+    transition: height 0.3s ease;
+}
+.socials-item:hover .socials-item-link:before {
+    height: 100%;
+}
+.socials-item.facebook .socials-item-link:before {
+    background-color: #3b5998;
+}
+.socials-item.twitter .socials-item-link:before {
+    background-color: #00acee;
+}
+.socials-item.linkedin .socials-item-link:before {
+    background-color: #0073b2;
+}
+.socials-item.google-plus .socials-item-link:before {
+    background-color: #c63b1e;
+}
+.socials-list:before, .socials-list:after {
+    content: " ";
+    display: table;
+}
+.socials-list:after {
+    clear: both;
+}
+/* index -- FOOTER -- end */
